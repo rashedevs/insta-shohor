@@ -14,7 +14,7 @@ const getReportedPosts = () => {
 const isLiked = (id) => {
   return likedPostsId?.length && !!likedPostsId.includes(id);
 };
-//------------------------------------problem1--------------------------
+
 const addToLiked = (id) => {
   likedPostsId.push(id);
   showPosts(posts);
@@ -39,19 +39,20 @@ const switchTab = (id) => {
     document.getElementById("liked").style.display = "block";
     document.getElementById("posts").style.display = "none";
     document.getElementById("reported").style.display = "none";
+    document.getElementById("liked").innerHTML = "";
 
     displayLikedPosts();
   } else {
     document.getElementById("reported").style.display = "block";
     document.getElementById("posts").style.display = "none";
     document.getElementById("liked").style.display = "none";
+    document.getElementById("reported").innerHTML = "";
 
     displayReportedPosts();
   }
 };
 
 const createPost = (post) => {
-  // console.log(post)
   const image = post.image;
   const div = document.createElement("article");
   div.classList.add("post");
