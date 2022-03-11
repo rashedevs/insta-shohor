@@ -58,7 +58,8 @@
         </div>
     </main>
     <!-- Bonus part (Q&A) -->
-    <section id="bonus" class="container mt-3 mb-5 px-3">
+    <section id="bonus" class="container mt-2 mb-5 px-3">
+        <h4 class="text-primary mb-3">Bonus section</h4>
         <div class="accordion" id="accordionExample">
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
@@ -70,13 +71,15 @@
                 <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        As we know, javascript is a synchronous, single-threaded, interpreted language. It can run
-                        through any modern browser engine or Node.js runtime.
-                        The Execution context of the engine is consist of two main components, a heap & a call
-                        stack.
-                        Thus, it can do one thing at a time. The javascript engine will parse the code line by line
-                        then
-                        convert it to the machine code to execute.
+                        <p>
+                            As we know, javascript is a synchronous, single-threaded, interpreted language. It can run
+                            through any modern browser engine or Node.js runtime.
+                            The Execution context of the engine is consist of two main components, a heap & a call
+                            stack.
+                            Thus, it can do one thing at a time. The javascript engine parse the code line by line
+                            then
+                            convert it to the machine code to execute.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -90,10 +93,15 @@
                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex placeat inventore vel doloremque
-                        deserunt illo. Nam nostrum pariatur eveniet neque suscipit exercitationem omnis provident nihil,
-                        sapiente similique tempore nulla enim fugiat placeat deleniti, voluptates hic inventore labore?
-                        Vel, deleniti eaque?
+                        <p>
+                            Using event loop, javascript can work in asynchronous way. If a task takes too long to
+                            complete,
+                            other tasks can be halted & could slow down our application. To avoid such implications,
+                            javascript has a concurrency model based on the event loop that has the ability to process
+                            multiple tasks asynchronously. Event loop keeps a relation with call stack & callback queue.
+                            Checks if the call stack is free, then lets know the callback queue to passes the callback
+                            function to be executed.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -107,10 +115,15 @@
                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos perspiciatis ducimus, expedita
-                        voluptatem ipsum enim architecto quibusdam aspernatur exercitationem, mollitia magni incidunt
-                        fugiat distinctio cumque officiis recusandae voluptatum fugit necessitatibus repudiandae
-                        inventore reprehenderit, quos perferendis dolor. Odit iusto iste ullam.
+                        <p>
+                            Local storage & Session storage are two objects of web storage which allows to save
+                            key/value pairs in the browser. Both can store user information in a similar way. The main
+                            difference is the expiration date.
+                            Local storage keeps store the user data without expiration date, this data will not be
+                            deleted when user closed the browser windows. It will be available for day, week, month and
+                            year. For session storage, it will delete all (data) windows when browser tab/windows closed
+                            by a web user.
+                        </p>
                     </div>
                 </div>
             </div>
